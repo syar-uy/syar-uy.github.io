@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mis Productos - Syar</title>
+        <title>Informes de Calibración - Syar</title>
 
         <link rel="stylesheet" href="css/syar.css">
         <link rel="stylesheet" href="css/productos.css">
@@ -13,7 +13,7 @@
         <header>
             <img src="img/logo-syar.svg" alt="Syar">
             <h1>
-                Mis Productos
+                Informes de Calibración
             </h1>
         </header>
 
@@ -22,7 +22,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#pendientes">Pendientes</a>
+                            <a href="#pendientes">Pendientes de Aprobación</a>
                         </li>
                         <li>
                             <a href="#aprobadas">Aprobadas</a>
@@ -54,9 +54,8 @@
                                     <input type="checkbox" name="all">
                                 </th>
                                 <th>Nº Orden</th>
-                                <th>Fecha</th>
+                                <th>Fecha de Ingreso</th>
                                 <th>Tipo</th>
-                                <th>Prioridad</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -68,7 +67,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -82,7 +80,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -96,7 +93,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -110,7 +106,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -124,7 +119,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -138,7 +132,6 @@
                                 <td>40387</td>
                                 <td>12/08/2025</td>
                                 <td>Certificación de TM a la Décima</td>
-                                <td>P</td>
                                 <td>
                                     <a href="#pendientes">Aprobar</a>
                                     <a href="#pendientes">Rechazar</a>
@@ -151,120 +144,80 @@
 
                 <section id="aprobadas">
                     <h2>Aprobadas</h2>
-                    <form action="#" method="get" autocomplete="off">
-                        <label>
-                            Acciones por lote:
-                            <select name="accion">
-                                <option value="">-- Acciones --</option>
-                                <option value="aprobar">Aprobar</option>
-                                <option value="rechazar">Rechazar</option>
-                            </select>
-                        </label>
-
-                        <input type="submit" value="Aplicar">
-                    </form>
                     <table>
                         <thead>
                             <tr>
-                                <th>
-                                    <input type="checkbox" name="all">
-                                </th>
                                 <th>Nº Orden</th>
+                                <th>Código interno</th>
                                 <th>Fecha aprob.</th>
                                 <th>Estado</th>
                                 <th>Tipo</th>
-                                <th>Código</th>
-                                <th>PML</th>
-                                <th>Fecha estim.</th>
+                                <th>Fecha Aprob.</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
+                                <td>38338 P</td>
+                                <td>AA 12</td>
                                 <td>23/06/2023</td>
                                 <td>Laboratorio - Calibración</td>
                                 <td>Certificación de MM</td>
+                                <td>28/06/2023</td>
+                                <td>
+                                    <a hre="#aprobadas">Ver orden</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>38338 P</td>
                                 <td>AA 12</td>
-                                <td>A79234</td>
+                                <td>23/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
+                                <td>Certificación de MM</td>
                                 <td>28/06/2023</td>
                                 <td>
                                     <a href="#aprobadas">Ver orden</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
+                                <td>38338 P</td>
+                                <td>AA 12</td>
                                 <td>23/06/2023</td>
                                 <td>Laboratorio - Calibración</td>
                                 <td>Certificación de MM</td>
-                                <td>AA 12</td>
-                                <td>A79234</td>
                                 <td>28/06/2023</td>
                                 <td>
                                     <a href="#aprobadas">Ver orden</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
+                                <td>38338 P</td>
+                                <td>AA 12</td>
                                 <td>23/06/2023</td>
                                 <td>Laboratorio - Calibración</td>
                                 <td>Certificación de MM</td>
-                                <td>AA 12</td>
-                                <td>A79234</td>
                                 <td>28/06/2023</td>
                                 <td>
                                     <a href="#aprobadas">Ver orden</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
+                                <td>38338 P</td>
+                                <td>AA 12</td>
                                 <td>23/06/2023</td>
                                 <td>Laboratorio - Calibración</td>
                                 <td>Certificación de MM</td>
-                                <td>AA 12</td>
-                                <td>A79234</td>
                                 <td>28/06/2023</td>
                                 <td>
                                     <a href="#aprobadas">Ver orden</a>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
+                                <td>38338 P</td>
+                                <td>AA 12</td>
                                 <td>23/06/2023</td>
                                 <td>Laboratorio - Calibración</td>
                                 <td>Certificación de MM</td>
-                                <td>AA 12</td>
-                                <td>A79234</td>
-                                <td>28/06/2023</td>
-                                <td>
-                                    <a href="#aprobadas">Ver orden</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
-                                <td>38338</td>
-                                <td>23/06/2023</td>
-                                <td>Laboratorio - Calibración</td>
-                                <td>Certificación de MM</td>
-                                <td>AA 12</td>
-                                <td>A79234</td>
                                 <td>28/06/2023</td>
                                 <td>
                                     <a href="#aprobadas">Ver orden</a>
@@ -276,39 +229,23 @@
 
                 <section id="terminadas">
                     <h2>Terminadas</h2>
-                    <form action="#" method="get" autocomplete="off">
-                        <label>
-                            Acciones por lote:
-                            <select name="accion">
-                                <option value="">-- Acciones --</option>
-                                <option value="aprobar">Aprobar</option>
-                                <option value="rechazar">Rechazar</option>
-                            </select>
-                        </label>
-
-                        <input type="submit" value="Aplicar">
-                    </form>
                     <table>
                         <thead>
                             <tr>
-                                <th>
-                                    <input type="checkbox" name="all">
-                                </th>
                                 <th>Nº Orden</th>
+                                <th>Código interno</th>
                                 <th>Fecha fin</th>
-                                <th>Código</th>
+                                <th>Tipo</th>
                                 <th>PML</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -316,12 +253,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -329,12 +264,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -342,12 +275,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -355,12 +286,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -368,12 +297,10 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <input type="checkbox" name="nroorden" value="38338">
-                                </td>
                                 <td>38338</td>
-                                <td>28/06/2023</td>
                                 <td>AA 12</td>
+                                <td>28/06/2023</td>
+                                <td>Laboratorio - Calibración</td>
                                 <td>A79234</td>
                                 <td>
                                     <a href="#terminadas">Informe calibración</a>
@@ -387,10 +314,26 @@
         </main>
 
         <footer>
-            <label for="theme" class="toggle-theme"></label>
-            <span>
-                Versión 0.1 | © Syar 2025
-            </span>
+            <img src="img/logo-syar.svg" alt="Syar">
+            <img src="img/iso_9001.png" alt="Certificación ISO-9001">
+            <p>
+                <strong>SYAR SA - Cerro Largo 920</strong>
+                <br>
+                Lun. a Vie. de 09:00 a 12:30 - 13:15 a 18:00
+                <br>
+                Tel/Fax: <a href="tel:+59829085350">(+598) 29085350</a>
+                / Mail: <a href="mailto:syar@syar.com.uy" target="_blank">
+                    syar@syar.com.uy
+                </a>
+                <br>
+                <a href="https://www.syar.com.uy" target="_blank">
+                    www.syar.com.uy
+                </a>
+            </p>
+            <div>
+                © Syar 2025 | Versión 0.2
+                <label for="theme" class="toggle-theme"></label>
+            </div>
         </footer>
 
         <script src="js/syar.js"></script>

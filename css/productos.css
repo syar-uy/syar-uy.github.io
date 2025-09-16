@@ -49,6 +49,11 @@ main
     box-shadow: var(--sombra);
 }
 
+table
+{
+    margin-top: 1rem;
+}
+
 table tbody a
 {
     display: inline-block;
@@ -73,5 +78,49 @@ table tbody a
 footer
 {
     padding: .6rem;
-    background: var(--clr-bg);
+    color: #fff;
+    background: var(--clr-primary);
+    
+    --but-theme-default: url(../img/dark_icon_fff.svg);
+    --but-theme-toggle: url(../img/light_icon_fff.svg);
+    
+    & img {
+        max-height: 3rem;
+        width: auto;
+        object-fit: contain;
+        background: #fff;
+        
+        &:first-of-type
+        {
+            border: solid .3rem;
+        }
+    }
+    
+    & p 
+    {
+        font-size: .8rem;
+        flex-grow: 1;
+    }
+    
+    & svg
+    {
+        width: 3rem;
+        height: auto;
+    }
+    
+    & div
+    {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (prefers-color-scheme: light)
+{
+    footer
+    {
+        --but-theme-default: url(../img/light_icon_fff.svg);
+        --but-theme-toggle: url(../img/dark_icon_fff.svg);
+    }
 }

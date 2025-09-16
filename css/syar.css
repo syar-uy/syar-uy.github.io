@@ -23,8 +23,8 @@
         0 4px 4px hsl(0 0% 0%/.15),
         0 12px 12px hsl(0 0% 0%/.07);
     
-    --but-theme-default: url(../img/dark_icon.svg);
-    --but-theme-toggle: url(../img/light_icon.svg);
+    --but-theme-default: url(../img/dark_icon_fff.svg);
+    --but-theme-toggle: url(../img/light_icon_000.svg);
 }
 
 :root.light,
@@ -59,8 +59,8 @@
         --clr-border: hsl(0 0% 30%);
         --clr-highlight: hsl(0 0% 100%);
         
-        --but-theme-default: url(../img/light_icon.svg);
-        --but-theme-toggle: url(../img/dark_icon.svg);
+        --but-theme-default: url(../img/light_icon_000.svg);
+        --but-theme-toggle: url(../img/dark_icon_fff.svg);
     }
     
     :root:has(#theme:checked)
@@ -97,13 +97,13 @@
 
 .toggle-theme
 {
-    display: block;
+    display: inline-block;
     width: 3rem;
     aspect-ratio: 1;
     margin: 0;
     
     cursor: pointer;
-    background: var(--but-theme-default) center / contain no-repeat;
+    background: var(--but-theme-default) center / cover no-repeat;
 }
 
 #theme:checked ~ * .toggle-theme
@@ -336,5 +336,6 @@ td
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 2rem;
     }
 }
