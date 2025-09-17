@@ -25,6 +25,11 @@
     
     --but-theme-default: url(../img/dark_icon_fff.svg);
     --but-theme-toggle: url(../img/light_icon_000.svg);
+    
+    --danger: hsl(7 100% 66%);
+    --warning: hsl(53 100% 21%);
+    --success: hsl(162 100% 22%);
+    --info: hsl(217 100% 70%);
 }
 
 :root.light,
@@ -230,9 +235,9 @@ table
     box-shadow: 0 0 20px #0001;
     border-radius: .5rem;
     
-    & tbody tr:nth-child(2n)
+    & tbody tr:nth-child(2n+1)
     {
-        background-color: var(--clr-bg-dark);
+        background-color: var(--clr-bg);
     }
 }
 
@@ -270,7 +275,7 @@ td
     {
         display: flow-root;
         
-        background: var(--clr-bg);
+        background: var(--clr-bg-dark);
     }
     
     & > nav
@@ -285,10 +290,10 @@ td
         & li:nth-of-type(1) a,
         &:has(~ section:nth-of-type(1):target) li:nth-of-type(1) a,
         &:has(~ section:nth-of-type(2):target) li:nth-of-type(2) a,
-        &:has(~ section:nth-of-type(3):target) li:nth-of-type(3) a,
-        & ul li a:hover
+        &:has(~ section:nth-of-type(3):target) li:nth-of-type(3) a
         {
-            background-color: var(--clr-bg);
+            color: inherit;
+            background-color: var(--clr-bg-dark);
         }
         
         & ul
@@ -311,6 +316,12 @@ td
                     border-top-right-radius: .4rem;
                     
                     transition: background-color .6s;
+                    
+                    &:hover
+                    {
+                        color: var(--clr-primary);
+                        background-color: var(--clr-bg-dark);
+                    }
                 }
             }
         }

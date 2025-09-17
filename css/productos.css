@@ -65,12 +65,13 @@ table
             font-size: .7em;
             font-weight: bold;
             border-radius: 1em;
-            background: var(--clr-primary);
+            background: var(--success);
         }
         
         & td.planta::after
         {
             content: 'PLANTA';
+            background: var(--info);
         }
         
         & a
@@ -105,7 +106,8 @@ footer
     --but-theme-default: url(../img/dark_icon_fff.svg);
     --but-theme-toggle: url(../img/light_icon_fff.svg);
     
-    & img {
+    & img 
+    {
         max-height: 3rem;
         width: auto;
         object-fit: contain;
