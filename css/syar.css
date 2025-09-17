@@ -206,6 +206,7 @@ form
         
         &:hover
         {
+            color: var(--clr-txt);
             background: var(--gradient-hover);
         }
     }
@@ -277,6 +278,7 @@ td
         display: flow-root;
         
         background: var(--clr-bg-dark);
+        box-shadow: 0 -.2rem 0 var(--clr-border);
     }
     
     & > nav
@@ -285,6 +287,7 @@ td
         
         &:has(~ section:target) li a
         {
+            color: var(--clr-txt-muted);
             background-color: transparent;
             box-shadow: 0 -.2rem 0 var(--clr-bg);
         }
@@ -296,7 +299,7 @@ td
         {
             color: inherit;
             background-color: var(--clr-bg-dark);
-            box-shadow: 0 -.2rem 0 var(--clr-highlight);
+            box-shadow: 0 -.2rem 0 var(--clr-border);
         }
         
         & ul
@@ -311,18 +314,22 @@ td
                 & a
                 {
                     display: block;
-                    padding: .5rem 1.5rem .8rem;
+                    padding: .8rem 1.5rem .5rem;
 
+                    color: var(--clr-txt-muted);
                     text-decoration: none;
+                    font-weight: bold;
 
                     border-top-left-radius: .4rem;
                     border-top-right-radius: .4rem;
                     
                     transition: background-color .6s;
                     
-                    &:hover
+                    &:hover,
+                    &:focus
                     {
-                        color: var(--clr-primary);
+                        outline: none;
+                        color: var(--clr-txt);
                         background-color: var(--clr-bg-dark);
                     }
                 }
