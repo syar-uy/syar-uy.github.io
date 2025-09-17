@@ -4,8 +4,8 @@
     --clr-primary: #ec1c24;
     
     --clr-bg-dark: hsl(0 0% 0%);
-    --clr-bg: hsl(0 0% 5%);
-    --clr-bg-light: hsl(0 0% 10%);
+    --clr-bg: hsl(0 0% 15%);
+    --clr-bg-light: hsl(0 0% 25%);
     
     --bg-op: .7;
     --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
@@ -71,8 +71,8 @@
     :root:has(#theme:checked)
     {
         --clr-bg-dark: hsl(0 0% 0%);
-        --clr-bg: hsl(0 0% 5%);
-        --clr-bg-light: hsl(0 0% 10%);
+        --clr-bg: hsl(0 0% 15%);
+        --clr-bg-light: hsl(0 0% 25%);
 
         --bg-op: .7;
         --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
@@ -229,10 +229,11 @@ form
 table
 {
     width: 100%;
-    margin: 0 0 3rem;
-    border-collapse: collapse;
+    margin: 0;
     
     box-shadow: 0 0 20px #0001;
+    border-collapse: collapse;
+    border: solid 1px var(--clr-border);
     border-radius: .5rem;
     
     & tbody tr:nth-child(2n+1)
@@ -285,6 +286,7 @@ td
         &:has(~ section:target) li a
         {
             background-color: transparent;
+            box-shadow: 0 -.2rem 0 var(--clr-bg);
         }
         
         & li:nth-of-type(1) a,
@@ -294,6 +296,7 @@ td
         {
             color: inherit;
             background-color: var(--clr-bg-dark);
+            box-shadow: 0 -.2rem 0 var(--clr-highlight);
         }
         
         & ul
