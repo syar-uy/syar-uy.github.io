@@ -41,7 +41,7 @@ header
 
 main
 {
-    width: min(100%, 1200px);
+    width: min(100%, 1400px);
     margin: .5rem auto;
     padding: .5rem;
     
@@ -55,6 +55,8 @@ table
     
     & tbody
     {
+        font-size: .9em;
+        
         & td:is(.taller,.planta)::after
         {
             display: inline-block;

@@ -1,20 +1,26 @@
-:root,
-:root.dark
+:root
 {
     --clr-primary: #ec1c24;
+    --danger: hsl(7 100% 66%);
+    --warning: hsl(53 100% 21%);
+    --success: hsl(162 100% 22%);
+    --info: hsl(217 100% 70%);
     
-    --clr-bg-dark: hsl(0 0% 0%);
-    --clr-bg: hsl(0 0% 15%);
-    --clr-bg-light: hsl(0 0% 25%);
-    
+    --clr-bg-dark: hsl(0 0% 90%);
+    --clr-bg: hsl(0 0% 95%);
+    --clr-bg-light: hsl(0 0% 100%);
+
     --bg-op: .7;
-    --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
-    --clr-bg-light-op: hsl(0 0% 10%/var(--bg-op));
-    
-    --clr-txt: hsl(0 0% 95%);
-    --clr-txt-muted: hsl(0 0% 70%);
+    --clr-bg-op: hsl(0 0% 95%/var(--bg-op));
+    --clr-bg-light-op: hsl(0 0% 100%/var(--bg-op));
+
+    --clr-txt: hsl(0 0% 5%);
+    --clr-txt-muted: hsl(0 0% 30%);
     --clr-border: hsl(0 0% 30%);
-    --clr-highlight: hsl(0 0% 60%);
+    --clr-highlight: hsl(0 0% 100%);
+
+    --but-theme-default: url(../img/light_icon_000.svg);
+    --but-theme-toggle: url(../img/dark_icon_fff.svg);
     
     --gradient: linear-gradient(0deg, var(--clr-bg-op) 95%, var(--clr-bg-light-op));
     --gradient-hover: linear-gradient(0deg, var(--clr-bg), var(--clr-bg-light));
@@ -22,35 +28,44 @@
     --sombra: 
         0 4px 4px hsl(0 0% 0%/.15),
         0 12px 12px hsl(0 0% 0%/.07);
-    
-    --but-theme-default: url(../img/dark_icon_fff.svg);
-    --but-theme-toggle: url(../img/light_icon_000.svg);
-    
-    --danger: hsl(7 100% 66%);
-    --warning: hsl(53 100% 21%);
-    --success: hsl(162 100% 22%);
-    --info: hsl(217 100% 70%);
 }
 
-:root.light,
 :root:has(#theme:checked)
 {
-    --clr-bg-dark: hsl(0 0% 90%);
-    --clr-bg: hsl(0 0% 95%);
-    --clr-bg-light: hsl(0 0% 100%);
-    
-    --clr-bg-op: hsl(0 0% 95%/var(--bg-op));
-    --clr-bg-light-op: hsl(0 0% 100%/var(--bg-op));
-    
-    --clr-txt: hsl(0 0% 5%);
-    --clr-txt-muted: hsl(0 0% 30%);
+    --clr-bg-dark: hsl(0 0% 0%);
+    --clr-bg: hsl(0 0% 15%);
+    --clr-bg-light: hsl(0 0% 25%);
+
+    --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
+    --clr-bg-light-op: hsl(0 0% 10%/var(--bg-op));
+
+    --clr-txt: hsl(0 0% 95%);
+    --clr-txt-muted: hsl(0 0% 70%);
     --clr-border: hsl(0 0% 30%);
-    --clr-highlight: hsl(0 0% 100%);
+    --clr-highlight: hsl(0 0% 60%);
 }
 
-@media (prefers-color-scheme: light)
+@media (prefers-color-scheme: dark)
 {
     :root
+    {
+        --clr-bg-dark: hsl(0 0% 0%);
+        --clr-bg: hsl(0 0% 15%);
+        --clr-bg-light: hsl(0 0% 25%);
+        
+        --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
+        --clr-bg-light-op: hsl(0 0% 10%/var(--bg-op));
+        
+        --clr-txt: hsl(0 0% 95%);
+        --clr-txt-muted: hsl(0 0% 70%);
+        --clr-border: hsl(0 0% 30%);
+        --clr-highlight: hsl(0 0% 60%);
+        
+        --but-theme-default: url(../img/dark_icon_fff.svg);
+        --but-theme-toggle: url(../img/light_icon_000.svg);
+    }
+    
+    :root:has(#theme:checked)
     {
         --clr-bg-dark: hsl(0 0% 90%);
         --clr-bg: hsl(0 0% 95%);
@@ -63,34 +78,6 @@
         --clr-txt-muted: hsl(0 0% 30%);
         --clr-border: hsl(0 0% 30%);
         --clr-highlight: hsl(0 0% 100%);
-        
-        --but-theme-default: url(../img/light_icon_000.svg);
-        --but-theme-toggle: url(../img/dark_icon_fff.svg);
-    }
-    
-    :root:has(#theme:checked)
-    {
-        --clr-bg-dark: hsl(0 0% 0%);
-        --clr-bg: hsl(0 0% 15%);
-        --clr-bg-light: hsl(0 0% 25%);
-
-        --bg-op: .7;
-        --clr-bg-op: hsl(0 0% 5%/var(--bg-op));
-        --clr-bg-light-op: hsl(0 0% 10%/var(--bg-op));
-
-        --clr-txt: hsl(0 0% 95%);
-        --clr-txt-muted: hsl(0 0% 70%);
-        --clr-border: hsl(0 0% 30%);
-        --clr-highlight: hsl(0 0% 60%);
-    }
-    
-    form
-    {
-        & button:hover,
-        & [type=submit]:hover
-        {
-            color: inherit;
-        }
     }
 }
 
@@ -206,7 +193,7 @@ form
         
         &:hover
         {
-            color: var(--clr-txt);
+            color: inherit;
             background: var(--gradient-hover);
         }
     }
@@ -245,7 +232,7 @@ table
 
 th
 {
-    padding: 1rem .5rem;
+    padding: 1rem .5rem .5rem;
     
     color: #fff;
     background-color: var(--clr-primary);
@@ -270,6 +257,8 @@ td
     {
         display: none;
         padding: 1.5rem .4rem;
+        border-radius: .4rem;
+        border-top-left-radius: 0;
     }
     
     & > section:target,
