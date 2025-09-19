@@ -232,7 +232,7 @@ table
 
 th
 {
-    padding: 1rem .5rem .5rem;
+    padding: .5rem;
     
     color: #fff;
     background-color: var(--clr-primary);
@@ -242,6 +242,21 @@ th
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1;
+}
+
+thead tr:first-of-type th
+{
+    padding: 1rem .5rem 0;
+}
+
+thead tr:last-of-type th
+{
+    padding: 0 .5rem .5rem;
+}
+
+thead tr:only-of-type th
+{
+    padding: 1rem .5rem .5rem;
 }
 
 td
