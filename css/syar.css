@@ -1,10 +1,10 @@
 :root
 {
     --clr-primary: #ec1c24;
-    --danger: hsl(7 100% 66%);
-    --warning: hsl(53 100% 21%);
-    --success: hsl(162 100% 22%);
-    --info: hsl(217 100% 70%);
+    --clr-danger: hsl(7 100% 66%);
+    --clr-warning: hsl(53 100% 21%);
+    --clr-success: hsl(162 100% 22%);
+    --clr-info: hsl(217 100% 70%);
     
     --clr-bg-dark: hsl(0 0% 90%);
     --clr-bg: hsl(0 0% 95%);
@@ -217,17 +217,12 @@ form
 table
 {
     width: 100%;
-    margin: 0;
+    margin: 1rem 0;
     
     box-shadow: 0 0 20px #0001;
     border-collapse: collapse;
     border: solid 1px var(--clr-border);
     border-radius: .5rem;
-    
-    & tbody tr:nth-child(2n+1)
-    {
-        background-color: var(--clr-bg);
-    }
 }
 
 th
@@ -244,25 +239,36 @@ th
     line-height: 1;
 }
 
-thead tr:first-of-type th
-{
-    padding: 1rem .5rem 0;
-}
-
-thead tr:last-of-type th
-{
-    padding: 0 .5rem .5rem;
-}
-
-thead tr:only-of-type th
-{
-    padding: 1rem .5rem .5rem;
-}
-
 td
 {
     padding: .5rem;
     text-align: center;
+}
+
+tbody 
+{
+    & tr:nth-child(2n+1)
+    {
+        background-color: var(--clr-bg);        
+    }
+}
+
+thead
+{
+    & tr:first-of-type th
+    {
+        padding: 1rem .5rem 0;
+    }
+    
+    & tr:last-of-type th
+    {
+        padding: 0 .5rem .5rem;
+    }
+    
+    & tr:only-of-type th
+    {
+        padding: 1rem .5rem .5rem;
+    }
 }
 
 .tabs

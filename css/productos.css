@@ -48,52 +48,47 @@ main
     box-shadow: var(--sombra);
 }
 
-table 
+table tbody
 {
-    margin-top: 1rem;
-    
-    & tbody
+    font-size: .9em;
+
+    & td:is(.taller,.planta)::after
     {
-        font-size: .9em;
-        
-        & td:is(.taller,.planta)::after
-        {
-            display: inline-block;
-            content: 'TALLER';
-            padding: .1em 1em;
-            margin-inline-start: 1em;
-            
-            font-size: .7em;
-            font-weight: bold;
-            border-radius: 1em;
-            background: var(--success);
-        }
-        
-        & td.planta::after
-        {
-            content: 'PLANTA';
-            background: var(--info);
-        }
-        
-        & a
-        {
-            display: inline-block;
-            padding: .2rem 1rem;
+        display: inline-block;
+        content: 'TALLER';
+        padding: .1em 1em;
+        margin-inline-start: 1em;
 
-            color: #fff;
-            background: var(--clr-primary);
-            text-decoration: none;
-            text-wrap: nowrap;
-            border: var(--border-card);
-            border-top: solid 1px var(--clr-highlight);
-            border-radius: .4rem;
-            cursor: pointer;
+        font-size: .7em;
+        font-weight: bold;
+        border-radius: 1em;
+        background: var(--clr-success);
+    }
 
-            &:hover
-            {
-                color: var(--clr-txt);
-                background: var(--gradient-hover);
-            }
+    & td.planta::after
+    {
+        content: 'PLANTA';
+        background: var(--clr-info);
+    }
+
+    & a
+    {
+        display: inline-block;
+        padding: .2rem 1rem;
+
+        color: #fff;
+        background: var(--clr-primary);
+        text-decoration: none;
+        text-wrap: nowrap;
+        border: var(--border-card);
+        border-top: solid 1px var(--clr-highlight);
+        border-radius: .4rem;
+        cursor: pointer;
+
+        &:hover
+        {
+            color: var(--clr-txt);
+            background: var(--gradient-hover);
         }
     }
 }
